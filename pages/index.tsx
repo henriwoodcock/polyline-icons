@@ -11,20 +11,22 @@ import styles from "@/styles/Home.module.css";
 
 import StravaIcon from "@/components/StravaIcon";
 import { GithubButton } from "@/components/GithubButton";
-import { useState } from "react";
 import { Footer } from "@/components/Footer";
+import { useLocalStorage } from "@mantine/hooks";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-    const [state, setState] = useState({
+    const storageKey = 'customState';
+    const defaultValue = {
         polyline: "miuyHzyPQ|@OdAe@lBKl@Gl@I|BMb@q@jBYvAi@zDEn@A~@CR",
         size: 256 * 2,
         stroke: "#2490ba",
         "stroke-width": 1.5,
         withBorder: true,
         color: "#fff",
-    });
+    }
+    const [ state, setState ] = useLocalStorage({ key: storageKey, defaultValue });
     return (
         <main className={`${styles.main} ${inter.className}`}>
             <div className={styles.description}>
