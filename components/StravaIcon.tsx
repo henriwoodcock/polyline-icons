@@ -1,7 +1,6 @@
 import { GeoJSON2SVG } from "geojson2svg";
 
-import { LineChart } from "@mantine/charts";
-import polyline, { toGeoJSON } from "@mapbox/polyline";
+import { toGeoJSON } from "@mapbox/polyline";
 import { Center, Paper } from "@mantine/core";
 
 const getHeightWidth = (p: string) => {
