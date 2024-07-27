@@ -12,7 +12,6 @@ jobs:
     steps:
         - uses: actions/checkout@v3
 
-
         - name: Setup Node
           uses: actions/setup-node@v1
           with:
@@ -26,6 +25,11 @@ jobs:
         - run: yarn check
 
         - run: yarn build
+
+        - shell: bash
+          name: Fix build output
+          run: |
+            find "out" -type f -exec sed -i 's#"/_next/#"./_next/#g' {} +
 
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3
