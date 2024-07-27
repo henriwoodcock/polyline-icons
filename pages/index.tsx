@@ -12,6 +12,7 @@ import styles from "@/styles/Home.module.css";
 import StravaIcon from "@/components/StravaIcon";
 import { GithubButton } from "@/components/GithubButton";
 import { useState } from "react";
+import { Footer } from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -99,6 +100,7 @@ export default function Home() {
                     />
                 </Group>
             </Stack>
+            <Footer/>
         </main>
     );
 }

@@ -9,6 +9,7 @@ export function GithubButton(
     return (
         <Button
             component="a"
+            target='_blank'
             href='https://github.com/henriwoodcock/polyline-icons'
             children={props.children}
             leftSection={
