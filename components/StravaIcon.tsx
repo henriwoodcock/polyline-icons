@@ -46,6 +46,7 @@ const StravaIcon = (props: StravaIconProps) => {
     return (
         <Paper
             withBorder={withBorder}
+            style={{backgroundColor: color}}
             background-color={color}
             p="md"
             radius="md"

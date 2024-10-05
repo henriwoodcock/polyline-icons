@@ -17,9 +17,10 @@ import { useLocalStorage } from "@mantine/hooks";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-    const storageKey = 'customState';
+    const storageKey = "customState";
     const defaultValue = {
-        polyline: "miuyHzyPQ|@OdAe@lBKl@Gl@I|BMb@q@jBYvAi@zDEn@A~@CR",
+        polyline:
+            "}xiyHjgWIC{@GUGs@I]KyAM]Kk@GaA[sCc@a@O}@QmBUa@IoA_@y@Oa@Qk@a@g@SU]@GHBDAABCYIOQO]Oe@Ig@i@}@w@SUo@c@q@k@{BmCcAyAqAyCi@sA]oAIa@IY_@cBeAeHWiC_@}BU_CKyAScG?aEIyEF_FAuC?OGQMq@A?AR@@G@EIAMEIGWGaD?}@DkA?eCWyAUm@s@mAM]L_@@SCOk@u@Q{@CWDw@?e@F_AIyBAmBDaECq@HyCC_@FuA?[HqBLmA@[?_BFyAEyBi@{EG{@WiAM}@Ce@DmASOGSIeAA]QiBSs@Ow@Uo@U_@Ue@K]G_A_@sAQaB?UVuBWmADuAHqANi@Rc@@UKqBEaC@cAMw@Aa@@_AI}@O{@BQ?BEECMCk@?cCIo@Ic@M_BC{BBm@Ca@@]V_AFc@Fe@B{@Nq@DiB?oAEa@AkAJgBEi@SmAWm@WeAa@}BSu@g@uA_@y@Qu@w@eAM]CMPABKCo@Ms@[oAc@kAQUK]_@eCF}@Iy@[gA[m@Yy@GGB`@FO?WYuAWo@e@iBiAqCiAaDc@mBIs@_@iAUeAo@uBO}@OcAG_AKk@cAgDSgBAq@BIDPAFg@sDWoAWkBQkBI_Bc@gEg@uCK_BYuAKoAOeAC]?i@E\D?]qBMwAGiCKy@a@uCY}A]}BSiB]gBKcBYoBOyBOs@UcB]uA_@gEa@{BQ}A[yBIcAM{@c@uEIyAM{CW{DOa@o@w@Kq@Iw@YmBQi@GYk@wB[aBMe@a@eA[mA_@u@QUa@{@a@cAGW",
         size: 256 * 2,
         stroke: "#2490ba",
         "stroke-width": 1.5,
